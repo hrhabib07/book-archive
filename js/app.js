@@ -38,7 +38,6 @@ const displayData = matchedBookList => {
             console.log(publisher);
             publisher = "Publisher Unknown";
         };
-        console.log(publisher);
         const firsPublish = book.first_publish_year;
         const coverImg = book.cover_i;
         const div = document.createElement('div');
@@ -47,7 +46,6 @@ const displayData = matchedBookList => {
             div.innerHTML = `
         <div class="card">
         <img src="image/default image.jpg" alt="">
-
         <div class="card-body">
             <h5 class="card-title">Book Name : ${bookTitle}</h5>
             <h5 class="card-title">Author Name : ${author}</h5>
