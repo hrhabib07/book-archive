@@ -35,7 +35,6 @@ const displayData = matchedBookList => {
         if(publisher !== undefined){
             publisher = publisher[0];
         } else{
-            console.log(publisher);
             publisher = "Publisher Unknown";
         };
         const firsPublish = book.first_publish_year;
@@ -76,9 +75,9 @@ const displayData = matchedBookList => {
     } else{
         const searchResultContainer = document.getElementById('show-result');
         const div = document.createElement('div');
-        div.classList.add('text-warning')
+        div.classList.add('text-danger')
         div.innerHTML = `
-        <h4>Type a valid book name.</h4>
+        <h4>No result found.</h4>
         `;
         spinnerStyle("none");
         searchResultContainer.appendChild(div);
